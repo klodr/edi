@@ -118,7 +118,7 @@ class AccountInvoiceImportSimplePdfInvoiceNumber(models.Model):
             if self.string_type == "year2":
                 years_str = [str(y)[-2:] for y in years]
             elif self.string_type == "year1":
-                years_str = [str(y)[-1:] for y in years]    
+                years_str = [str(y)[-1:] for y in years]
             else:
                 years_str = [str(y) for y in years]
             regex_list.append("(?:%s)" % "|".join(years_str))
